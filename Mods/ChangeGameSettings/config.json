@@ -1,0 +1,81 @@
+﻿{
+	"version" : "1.4",
+	"author" : "cech12",
+	
+	"name" :  {
+		"en" : "Game Settings",
+		"de" : "Spiel-Einstellungen"
+	},
+	"description" : {
+		"en" : "Change some game settings like the age of your Diggles or the population maximum.",
+		"de" : "Einstellen einiger Spiel-Variablen wie z. B. Das Alter der Wiggle oder die Populationsgrenze."
+	},
+	
+	"links" : {
+		"download" : "https://github.com/DigglesMods/ChangeGameSettings/releases",
+		"wiki" : "https://github.com/DigglesMods/ChangeGameSettings/wiki"
+	},
+	
+	"settings" : [
+		{
+		  "id": "MAX_AGE",
+		  "type": "int",
+		  "default": 24,
+		  "min": 12,
+		  "max": 999,
+			"name" :  {
+				"en" : "Max age",
+				"de" : "Maximales Alter"
+			},
+			"description" : {
+				"en" : "Max age of Diggles",
+				"de" : "Maximales Alter der Wiggles"
+			}
+		},
+		{
+		  "id": "POP_SOLL",
+		  "type": "int",
+		  "default": 22,
+		  "min": 18,
+		  "max": 99,
+			"name" :  {
+				"en" : "Max population",
+				"de" : "Maximales Population"
+			},
+			"description" : {
+				"en" : "Max population of Diggles",
+				"de" : "Maximale Population der Wiggle"
+			}
+		},
+		{
+		  "id": "MIN_EXP",
+		  "type": "int",
+		  "default": 1,
+		  "min": 1,
+		  "max": 999,
+			"name" :  {
+				"en" : "Min experience",
+				"de" : "Minimale Erfahrung"
+			},
+			"description" : {
+				"en" : "Start experience maximum of Diggles (1 means 100). Must be smaller than MAX_EXP!",
+				"de" : "Start-Erfahrungspunkte der Wiggle (1 meint 100). Muss kleiner als MAX_EXP sein!"
+			}
+		},
+		{
+		  "id": "MAX_EXP",
+		  "type": "int",
+		  "default": 2,
+		  "min": 1,
+		  "max": 999,
+			"name" :  {
+				"en" : "Max experience",
+				"de" : "Maximale Erfahrung"
+			},
+			"description" : {
+				"en" : "Max experience of Diggles (2 means 200). Must be greater than MIN_EXP!",
+				"de" : "Maximale Erfahrungspunkte der Wiggle (2 meint 200). Muss größer als MIN_EXP sein!"
+			}
+		}
+	]
+}

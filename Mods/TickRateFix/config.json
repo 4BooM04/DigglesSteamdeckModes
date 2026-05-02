@@ -1,0 +1,7 @@
+{
+  "name": "TickRateFix",
+  "description": "Increases game tick rate to 0.5s and rebalances attribute drains.",
+  "version": "1.0.0",
+  "author": "Gemini CLI",
+  "priority": 10
+}

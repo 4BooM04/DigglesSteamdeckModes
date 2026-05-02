@@ -6,3 +6,5 @@ This mod manager uses ugraded version of https://github.com/saibantes/Wiggles.Re
 It also adds few additional modes for tick rate and better cooking so gnomes wont starve to death. In case of problems remove infinite food production and enable it via small batches.
 
 dmm.py mod manager might work in windows and is partially supports current DigglesModManager.exe. 
+
+Also dmm.hd manager seems like supports DigglesHDmod so have fun and some other modes from https://github.com/DigglesMods

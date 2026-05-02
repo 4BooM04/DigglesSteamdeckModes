@@ -1,0 +1,15 @@
+{
+  "name": "AutoHealingPotion",
+  "author": "Gemini CLI",
+  "description": "Allows gnomes to automatically drink healing potions during combat if their health falls below a configurable threshold.",
+  "version": "1.0",
+  "settings": [
+    {
+      "id": "AUTO_HEAL_THRESHOLD",
+      "type": "float",
+      "default": 0.4,
+      "name": "Auto-Heal Threshold",
+      "description": "Health percentage (0.0-1.0) below which a gnome will automatically consume a healing potion."
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+    "version" : "0.3",
+    "author" : "Saibantes & Gemini CLI",
+    
+    "name" :  {
+        "en" : "RevisedPlanner",
+        "de" : "Überarbeiteter Planer"
+    },
+    "description" : {
+        "en" : "Complete AI overhaul: Changes the behavior of Diggles at work and during leisure. Highly configurable.",
+        "de" : "Komplette KI-Überarbeitung: Ändert das Verhalten der Wiggles bei der Arbeit und in der Freizeit. Hochgradig konfigurierbar."
+    },
+    
+    "links" : {
+        "download" : "https://github.com/saibantes/Wiggles.RevisedPlanner.mod/releases",
+        "wiki" : "https://github.com/saibantes/Wiggles.RevisedPlanner.mod/wiki"
+    },
+	
+	"messages" : [
+		{
+			"content" :  {
+				"en" : "This mod depends on bugfixes of the BugFix mod. If this mod is used, it is strongly recommended to install the BugFix mod as well."
+			}
+		}
+	],
+
+    "settings" : [
+        {
+            "id": "ST_SEARCH_FACTOR_MAX",
+            "type": "float",
+            "default": 6.0,
+            "name": "Max Search Multiplier",
+            "description": "Max search range multiplier for hungry gnomes (leisure tasks)."
+        },
+        {
+            "id": "ST_HUNGER_THRESHOLD",
+            "type": "float",
+            "default": 0.7,
+            "name": "Hunger Threshold",
+            "description": "Nutrition level (0.0-1.0) above which eating is deprioritized."
+        },
+        {
+            "id": "ST_VARIETY_AGE",
+            "type": "float",
+            "default": 6.0,
+            "name": "Variety Age Threshold",
+            "description": "Age in days before gnomes start judging service variety and quality."
+        },
+        {
+            "id": "ST_MAX_FUN_NEEDS",
+            "type": "int",
+            "default": 5,
+            "name": "Max Fun Needs",
+            "description": "Maximum number of distinct fun activities a gnome 'needs' before getting unhappy."
+        },
+        {
+            "id": "ST_MOOD_SENSITIVITY",
+            "type": "float",
+            "default": 0.003,
+            "name": "Mood Sensitivity",
+            "description": "Multiplier for mood loss when leisure needs are unmet."
+        },
+        {
+            "id": "ST_HOSPITAL_RANGE",
+            "type": "int",
+            "default": 160,
+            "name": "Hospital Search Range",
+            "description": "Distance gnomes will search for an available hospital when injured."
+        },
+        {
+            "id": "WORK_KITCHEN_RANGE",
+            "type": "int",
+            "default": 10,
+            "name": "Kitchen Ingredient Range",
+            "description": "Range (in meters) at which kitchens look for loose ingredients on the ground."
+        },
+        {
+            "id": "WORK_PREFERENCE_PENALTY",
+            "type": "int",
+            "default": 1000,
+            "name": "Workplace Preference Penalty",
+            "description": "Score penalty for assigning a gnome to a non-preferred workplace."
+        },
+        {
+            "id": "WORK_INV_OVERLOAD_PENALTY",
+            "type": "int",
+            "default": 1000,
+            "name": "Inventory Overload Penalty",
+            "description": "Score penalty per extra trip required if inventory is too small for a transport task."
+        },
+        {
+            "id": "WORK_BLACKLIST_DIG",
+            "type": "int",
+            "default": 450,
+            "name": "Digging Blacklist Duration",
+            "description": "Seconds to ignore a digging site that was found to be unreachable."
+        },
+        {
+            "id": "WORK_BLACKLIST_ITEM",
+            "type": "int",
+            "default": 150,
+            "name": "Item Blacklist Duration",
+            "description": "Seconds to ignore a resource on the ground that was found to be unreachable."
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+{
+  "name": "BetterCookingPriority",
+  "author": "Gemini Modder",
+  "description": "Increases the priority of food production tasks in the auto-production system to prevent starvation in large bases.",
+  "version": "1.1",
+  "settings": [
+    {
+      "id": "FOOD_BASE_PRIORITY",
+      "type": "float",
+      "default": 5000.0,
+      "name": "Base Food Priority",
+      "description": "The base score bonus added to all food-related tasks."
+    },
+    {
+      "id": "CARRY_HUNGER_BONUS",
+      "type": "float",
+      "default": 6000.0,
+      "name": "Carry Hunger Bonus",
+      "description": "Additional priority for carrying ingredients, scaled by how hungry the gnome is."
+    },
+    {
+      "id": "PROD_HEALTH_BONUS",
+      "type": "float",
+      "default": 4000.0,
+      "name": "Production Health Bonus",
+      "description": "Additional priority for cooking tasks, scaled by how well-fed (healthy) the gnome is."
+    },
+    {
+      "id": "STARVATION_THRESHOLD",
+      "type": "float",
+      "default": 0.2,
+      "name": "Starvation Threshold",
+      "description": "Nutrition level (0.0-1.0) below which a gnome is considered 'starving'."
+    },
+    {
+      "id": "STARVATION_ESCALATION",
+      "type": "float",
+      "default": 15000.0,
+      "name": "Starvation Escalation",
+      "description": "A massive priority boost triggered when anyone in the colony is starving."
+    }
+  ]
+}

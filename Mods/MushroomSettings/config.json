@@ -1,0 +1,141 @@
+﻿{
+	"version" : "1.0",
+	"author" : "cech12, SosTheKing",
+	
+	"name" :  {
+		"en" : "Mushroom Settings",
+		"de" : "Pilz-Einstellungen"
+	},
+	"description" : {
+		"en" : "Change some mushroom related settings like the growing time or the loot.",
+		"de" : "Einstellen einiger Pilz-Variablen wie z. B. die Wachstumszeit oder die Ausbeute."
+	},
+	
+	"links" : {
+		"download" : "https://github.com/DigglesMods/MushroomSettings/releases",
+		"wiki" : "https://github.com/DigglesMods/MushroomSettings/wiki"
+	},
+	
+	"settings" : [
+		{
+		  "id": "GROWING_TIME",
+		  "type": "int",
+		  "default": 170,
+		  "min": 1,
+		  "max": 999,
+			"name" :  {
+				"en" : "Growing Time",
+				"de" : "Wachstumszeit"
+			},
+			"description" : {
+				"en" : "Time (seconds) a mushroom needs to get to the next growing phase",
+				"de" : "Zeit (Sekunden), die ein Pilz benötigt, um die nächste Wachstumsphase zu erreichen"
+			}
+		},
+		{
+		  "id": "SPAWN_TIME",
+		  "type": "int",
+		  "default": 200,
+		  "min": 1,
+		  "max": 999,
+			"name" :  {
+				"en" : "Spawn Time",
+				"de" : "Entstehungszeit"
+			},
+			"description" : {
+				"en" : "Time (seconds) a mushroom needs to spawn",
+				"de" : "Zeit (Sekunden), die ein Pilz benötigt, um zu entstehen"
+			}
+		},
+		{
+		  "id": "HAT_PHASE_1",
+		  "type": "int",
+		  "default": 1,
+		  "min": 0,
+		  "max": 20,
+			"name" :  {
+				"en" : "Hats Phase 1",
+				"de" : "Hüte Phase 1"
+			},
+			"description" : {
+				"en" : "Hat loot when chopping in phase 1",
+				"de" : "Hut-Ausbeute beim Fällen in Phase 1"
+			}
+		},
+		{
+		  "id": "WOOD_PHASE_1",
+		  "type": "int",
+		  "default": 0,
+		  "min": 0,
+		  "max": 20,
+			"name" :  {
+				"en" : "Wood Phase 1",
+				"de" : "Holz Phase 1"
+			},
+			"description" : {
+				"en" : "Wood loot when chopping in phase 1",
+				"de" : "Holz-Ausbeute beim Fällen in Phase 1"
+			}
+		},
+		{
+		  "id": "HAT_PHASE_2",
+		  "type": "int",
+		  "default": 1,
+		  "min": 0,
+		  "max": 20,
+			"name" :  {
+				"en" : "Hats Phase 2",
+				"de" : "Hüte Phase 2"
+			},
+			"description" : {
+				"en" : "Hat loot when chopping in phase 2",
+				"de" : "Hut-Ausbeute beim Fällen in Phase 2"
+			}
+		},
+		{
+		  "id": "WOOD_PHASE_2",
+		  "type": "int",
+		  "default": 1,
+		  "min": 0,
+		  "max": 20,
+			"name" :  {
+				"en" : "Wood Phase 2",
+				"de" : "Holz Phase 2"
+			},
+			"description" : {
+				"en" : "Wood loot when chopping in phase 2",
+				"de" : "Holz-Ausbeute beim Fällen in Phase 2"
+			}
+		},
+		{
+		  "id": "HAT_PHASE_3",
+		  "type": "int",
+		  "default": 2,
+		  "min": 0,
+		  "max": 20,
+			"name" :  {
+				"en" : "Hats Phase 3",
+				"de" : "Hüte Phase 3"
+			},
+			"description" : {
+				"en" : "Hat loot when chopping in phase 3",
+				"de" : "Hut-Ausbeute beim Fällen in Phase 3"
+			}
+		},
+		{
+		  "id": "WOOD_PHASE_3",
+		  "type": "int",
+		  "default": 1,
+		  "min": 0,
+		  "max": 20,
+			"name" :  {
+				"en" : "Wood Phase 3",
+				"de" : "Holz Phase 3"
+			},
+			"description" : {
+				"en" : "Wood loot when chopping in phase 3",
+				"de" : "Holz-Ausbeute beim Fällen in Phase 3"
+			}
+		}
+	]
+}

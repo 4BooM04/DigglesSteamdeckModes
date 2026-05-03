@@ -103,3 +103,28 @@ $with
 			fincr sumloss $moodloss
 		}
 $end
+
+$start
+$replace
+			set kidneed [expr {$popsoll-$popist+$delay+$genderasym}]
+			if {$childrenasym<0.0} {
+				fincr kidneed [expr {$childrenasym*$kidneed*0.1}]
+			}
+			//log "kidneed [get_objname this] $popsoll-$popist+$delay+$genderasym+$childrenasym"
+			if {abs([lindex $reprod_sexratio 0]-$kidneed)>0.1} {
+				sparetime_calc_sexwish $kidneed
+			}
+$with
+			set kidneed [expr {$popsoll-$popist+$delay+$genderasym}]
+			# EMERGENCY POPULATION FIX: If population is below threshold, artificially increase kidneed
+			if {$popist < $print:ST_MIN_POPULATION} {
+				set kidneed [hmax $kidneed [expr {$print:ST_MIN_POPULATION - $popist}]]
+			}
+			if {$childrenasym<0.0} {
+				fincr kidneed [expr {$childrenasym*$kidneed*0.1}]
+			}
+			# log "kidneed [get_objname this] $popsoll-$popist+$delay+$genderasym+$childrenasym -> $kidneed"
+			if {abs([lindex $reprod_sexratio 0]-$kidneed)>0.1} {
+				sparetime_calc_sexwish $kidneed
+			}
+$end

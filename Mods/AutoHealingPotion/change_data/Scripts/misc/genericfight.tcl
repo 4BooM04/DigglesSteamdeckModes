@@ -1,13 +1,17 @@
 $start
 $replace
-		// Flucht ?
-		if { [fight_escape] == 1 } {
-			fight_exit "escape"
-			return
+		//###test
+		if { ![fight_checkhp] } {
+			fight_exit "i'm dead"
 		}
 $with
+		//###test
+		if { ![fight_checkhp] } {
+			fight_exit "i'm dead"
+		}
+
 		// Auto-Heal ?
-		if { [get_objclass this] == "Zwerg" && [get_attrib this atr_Hitpoints] < $print:AUTO_HEAL_THRESHOLD } {
+		if { [state_getenablecnt this] > 0 && [get_objclass this] == "Zwerg" && [get_attrib this atr_Hitpoints] < $print:AUTO_HEAL_THRESHOLD } {
 			set dmm_potion 0
 			set dmm_items [inv_list this]
 			foreach dmm_class_search {Grosser_Heiltrank Heiltrank Kleiner_Heiltrank} {
@@ -24,11 +28,5 @@ $with
 				drinkpotion $dmm_potion
 				return
 			}
-		}
-
-		// Flucht ?
-		if { [fight_escape] == 1 } {
-			fight_exit "escape"
-			return
 		}
 $end

@@ -101,6 +101,20 @@
             "default": 150,
             "name": "Item Blacklist Duration",
             "description": "Seconds to ignore a resource on the ground that was found to be unreachable."
+        },
+        {
+            "id": "ST_MIN_POPULATION",
+            "type": "int",
+            "default": 10,
+            "name": "Emergency Population Threshold",
+            "description": "Minimum population before gnomes prioritize reproduction (ignoring world settings)."
+        },
+        {
+            "id": "ST_FERTILITY_BOOST",
+            "type": "float",
+            "default": 2.0,
+            "name": "Emergency Fertility Boost",
+            "description": "Multiplier for reproduction success when population is below threshold."
         }
     ]
 }
